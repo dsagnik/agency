@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — [AGENCY NAME]</title>
+<meta name="description" content="Get in touch with [AGENCY NAME], a Dubai-based digital agency. Start a project or ask a question.">
+<link rel="canonical" href="[WEBSITE DOMAIN]/contact.html">
+<meta property="og:title" content="Contact — [AGENCY NAME]">
+<meta property="og:description" content="Start a project with [AGENCY NAME], a Dubai-based digital agency.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="[WEBSITE DOMAIN]/contact.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">[AGENCY<span>.</span>NAME]</a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="contact.html" class="btn btn-secondary">Get a Quote</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav">
+  <nav aria-label="Mobile">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+  </nav>
+</div>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Contact</span>
+      <h1>Let's talk about your project.</h1>
+      <p class="lede">Tell us what you're building. We typically respond within [RESPONSE TIME].</p>
+    </div>
+  </section>
+
+  <section class="section" style="border-top:1px solid var(--border);">
+    <div class="container split">
+
+      <!-- LEFT — contact details -->
+      <div data-reveal>
+        <span class="eyebrow">Get in touch</span>
+        <div style="margin-top:32px; display:flex; flex-direction:column; gap:28px;">
+          <div>
+            <span class="num">Location</span>
+            <p style="margin-top:8px; color:var(--text-primary);">[DUBAI OFFICE ADDRESS]</p>
+          </div>
+          <div>
+            <span class="num">Phone</span>
+            <p style="margin-top:8px;"><a href="tel:[PHONE NUMBER]" style="color:var(--text-primary);">[PHONE NUMBER]</a></p>
+          </div>
+          <div>
+            <span class="num">Email</span>
+            <p style="margin-top:8px;"><a href="mailto:[EMAIL ADDRESS]" style="color:var(--text-primary);">[EMAIL ADDRESS]</a></p>
+          </div>
+          <div>
+            <span class="num">Working hours</span>
+            <p style="margin-top:8px; color:var(--text-primary);">[WORKING HOURS]</p>
+          </div>
+          <div>
+            <span class="num">Follow</span>
+            <div class="footer-social" style="margin-top:10px;">
+              <a href="[SOCIAL LINK]" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="[SOCIAL LINK]" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="[SOCIAL LINK]" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="[SOCIAL LINK]" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT — inquiry form -->
+      <div data-reveal>
+        <span class="eyebrow">Project inquiry</span>
+        <form id="inquiry-form" novalidate style="margin-top:28px;">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" name="fullName" data-required>
+              <p class="field-error">Please enter your name.</p>
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" data-required>
+              <p class="field-error">Please enter a valid email.</p>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-field">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="service">Service Required</label>
+              <select id="service" name="service" data-required>
+                <option value="">Select a service</option>
+                <option>Website Development</option>
+                <option>Web / Mobile Application</option>
+                <option>Custom CRM / Software</option>
+                <option>SEO &amp; Digital Marketing</option>
+                <option>Branding &amp; Creative</option>
+                <option>Automation &amp; AI</option>
+                <option>Other</option>
+              </select>
+              <p class="field-error">Please select a service.</p>
+            </div>
+            <div class="form-field">
+              <label for="budget">Budget Range</label>
+              <select id="budget" name="budget" data-required>
+                <option value="">Select a range</option>
+                <option>$5,000 – $10,000</option>
+                <option>$10,000 – $25,000</option>
+                <option>$25,000 – $50,000</option>
+                <option>$50,000+</option>
+              </select>
+              <p class="field-error">Please select a budget range.</p>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="description">Project Description</label>
+            <textarea id="description" name="description" data-required></textarea>
+            <p class="field-error">Please tell us a little about the project.</p>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+          <p class="form-note">Budget ranges are qualification bands, not fixed quotes. This form is a frontend interface only — connect it to a backend or form service to receive live submissions.</p>
+          <p class="form-success" role="status"></p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="section-tight" style="border-top:1px solid var(--border);">
+    <div class="container">
+      <span class="eyebrow" data-reveal>Location</span>
+      <h3 style="margin-top:14px;" data-reveal>Dubai, UAE</h3>
+      <div data-reveal style="margin-top:28px; aspect-ratio:21/7; background:var(--bg-surface); border:1px solid var(--border); display:flex; align-items:center; justify-content:center;">
+        <span class="num">[MAP EMBED — exact office location to be added]</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">[AGENCY<span>.</span>NAME]</a>
+        <p>A Dubai-based digital agency that builds, markets and optimizes digital businesses under one roof.</p>
+        <div class="footer-social">
+          <a href="[SOCIAL LINK]" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="[SOCIAL LINK]" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="[SOCIAL LINK]" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="[SOCIAL LINK]" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#build">Web Development</a></li>
+          <li><a href="services.html#build">App Development</a></li>
+          <li><a href="services.html#build">CRM Development</a></li>
+          <li><a href="services.html#market">SEO &amp; Marketing</a></li>
+          <li><a href="services.html#optimize">Automation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:[EMAIL ADDRESS]">[EMAIL ADDRESS]</a></li>
+          <li><a href="tel:[PHONE NUMBER]">[PHONE NUMBER]</a></li>
+          <li>[DUBAI OFFICE ADDRESS]</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span data-year></span> [AGENCY NAME]. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 /* ============================================================
-   [AGENCY NAME] — main.js
+   Binary Bridge AI — main.js
    Shared interaction layer: header state, mobile nav, scroll
    reveals, marquee, BUILD/MARKET/OPTIMIZE, FAQ accordion,
    testimonial video controls, form validation.
@@ -34,23 +34,34 @@ function initHeaderScroll(){
 function initMobileNav(){
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.mobile-nav');
+  const closeBtn = document.querySelector('.mobile-nav-close');
   if(!toggle || !nav) return;
 
   const closeNav = () => {
     nav.classList.remove('is-open');
+    toggle.classList.remove('is-active');
     toggle.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
   };
   const openNav = () => {
     nav.classList.add('is-open');
+    toggle.classList.add('is-active');
     toggle.setAttribute('aria-expanded', 'true');
     document.body.style.overflow = 'hidden';
   };
 
-  toggle.addEventListener('click', () => {
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
     const isOpen = nav.classList.contains('is-open');
     isOpen ? closeNav() : openNav();
   });
+
+  if(closeBtn){
+    closeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeNav();
+    });
+  }
 
   nav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeNav));
 
